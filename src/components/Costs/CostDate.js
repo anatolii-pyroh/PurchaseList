@@ -1,5 +1,5 @@
-import React from "react";
 import "./CostDate.css";
+
 const CostDate = (props) => {
   const month = props.date.toLocaleString("ru-RU", { month: "long" });
   const year = props.date.getFullYear();

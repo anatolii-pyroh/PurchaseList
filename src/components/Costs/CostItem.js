@@ -1,7 +1,7 @@
-import React from "react";
+import "./CostItem.css";
 import Card from "../UI/Card";
 import CostDate from "./CostDate";
-import "./CostItem.css";
+
 const CostItem = (props) => {
   return (
     <Card className="cost-item">

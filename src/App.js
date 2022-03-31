@@ -1,5 +1,4 @@
 import Costs from "./components/UI/Costs";
-import CostItem from "./components/UI/CostItem";
 
 function App() {
   const costs = [
@@ -20,7 +19,7 @@ function App() {
     },
   ];
   return (
-    <div className='App'>
+    <div className="App">
       <Costs costs={costs}/>
     </div>
   );

@@ -21,7 +21,7 @@ function App() {
   ];
   return (
     <div className='App'>
-      <Costs costs_0 = {costs[0]} costs_1 = {costs[1]} costs_2 = {costs[2]}/>
+      <Costs costs={costs}/>
     </div>
   );
 }

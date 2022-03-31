@@ -1,3 +1,4 @@
+import React from "react";
 import Costs from "./components/UI/Costs";
 
 function App() {
@@ -19,10 +20,16 @@ function App() {
     },
   ];
   return (
-    <div className="App">
-      <Costs costs={costs}/>
+    <div className='App'>
+      <Costs costs={costs} />
     </div>
   );
+
+  // return (
+  //   React.createElement("div", {},
+  //   React.createElement("h2", {}, "Начнём изучение React!",
+  //   React.createElement(Costs, { costs: costs})))
+  // )
 }
 
 export default App;

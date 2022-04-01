@@ -10,6 +10,7 @@ const CostItem = (props) => {
         <h2>{props.description}</h2>
         <div className="cost-item__price">{props.amount} $</div>
       </div>
+      <button>Изменить описание</button>
     </Card>
   );
 };

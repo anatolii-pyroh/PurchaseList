@@ -1,4 +1,5 @@
 .new-cost__controls {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;

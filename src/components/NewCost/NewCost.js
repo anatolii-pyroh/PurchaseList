@@ -1,9 +1,12 @@
-import React from "react";
+import CostForm from "./CostForm";
+import "./NewCost.css";
 
 const NewCost = () => {
-  return <div>
-      <form></form>
-  </div>;
+  return (
+    <div className='new-cost'>
+      <CostForm />
+    </div>
+  );
 };
 
 export default NewCost;

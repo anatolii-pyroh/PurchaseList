@@ -22,26 +22,7 @@ const INITIAL_COSTS = [
     amount: 1254.12,
   },
 ];
-const costs = [
-  {
-    id: "c1",
-    date: new Date(2021, 2, 12),
-    description: "Холодильник",
-    amount: 999.999,
-  },
-  {
-    id: "c2",
-    date: new Date(2021, 3, 1),
-    description: "Костюм",
-    amount: 49.99,
-  },
-  {
-    id: "c3",
-    date: new Date(2021, 11, 25),
-    description: "MacBook",
-    amount: 1254.12,
-  },
-];
+
 function App() {
   const [costs, setCosts] = useState(INITIAL_COSTS);
   const addCostHandler = (cost) => {

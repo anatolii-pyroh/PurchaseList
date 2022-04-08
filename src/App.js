@@ -11,7 +11,7 @@ const INITIAL_COSTS = [
   },
   {
     id: "c2",
-    date: new Date(2021, 3, 1),
+    date: new Date(2022, 3, 1),
     description: "Костюм",
     amount: 49.99,
   },

@@ -3,6 +3,7 @@ import "./Costs.css";
 import CostItem from "./CostItem";
 import CostsFilter from "./CostsFilter";
 import Card from "../UI/Card";
+import CostList from "./CostList";
 
 const Costs = (props) => {
   const [selectedYear, setSelectedYear] = useState("2021");
@@ -15,22 +16,11 @@ const Costs = (props) => {
     (element) => element.date.getFullYear().toString() === selectedYear
   );
 
-  let costContent = <p>В этом году расходов нет</p>
-  if (filteredCosts.length > 0) {
-    costContent = filteredCosts.map((cost) => (
-      <CostItem
-        key={cost.id}
-        date={cost.date}
-        description={cost.description}
-        amount={cost.amount}
-      />
-    ))
-  }
   return (
     <div>
       <Card className='costs'>
         <CostsFilter year={selectedYear} onYearChange={yearChangeHandler} />
-        {costContent}
+        <CostList costs={filteredCosts} />
       </Card>
     </div>
   );

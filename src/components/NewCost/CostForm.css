@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .new-cost__actions {
-  text-align: left;
+  text-align: center;
 }

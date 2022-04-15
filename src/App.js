@@ -4,19 +4,19 @@ import NewCost from "./components/NewCost/NewCost";
 
 const INITIAL_COSTS = [
   {
-    id: "c1",
+    id: "1",
     date: new Date(2021, 2, 12),
     description: "Холодильник",
     amount: 999.999,
   },
   {
-    id: "c2",
+    id: "2",
     date: new Date(2022, 3, 1),
     description: "Костюм",
     amount: 49.99,
   },
   {
-    id: "c3",
+    id: "3",
     date: new Date(2021, 11, 25),
     description: "MacBook",
     amount: 1254.12,
@@ -25,11 +25,13 @@ const INITIAL_COSTS = [
 
 function App() {
   const [costs, setCosts] = useState(INITIAL_COSTS);
-  const addCostHandler = (cost) => {
-    setCosts((previousCosts) => {
-      return [cost, ...previousCosts];
-    });
-  };
+  const addCostHandler = (inputCostData) => {
+    // setCosts((previousCosts) => {
+    //   return [cost, ...previousCosts];
+    // });
+    setCosts([...costs, inputCostData]);
+    };
+
   return (
     <div className='App'>
       <NewCost onAddCost={addCostHandler} />

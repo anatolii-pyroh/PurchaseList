@@ -6,7 +6,7 @@ const NewCost = (props) => {
   const saveCostDataHandler = (inputCostData) => {
     const costData = {
       ...inputCostData,
-      id: Date.now()
+      id: Math.random().toString()
     };
     props.onAddCost(costData);
     setIsFormVisible(false);

@@ -25,11 +25,11 @@ const INITIAL_COSTS = [
 
 function App() {
   const [costs, setCosts] = useState(INITIAL_COSTS);
-  const addCostHandler = (inputCostData) => {
+  const addCostHandler = (сostData) => {
     // setCosts((previousCosts) => {
     //   return [cost, ...previousCosts];
     // });
-    setCosts([...costs, inputCostData]);
+    setCosts([...costs, сostData]);
     };
 
   return (
